@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <select name="day" id="day">
+      <option value="0">sunday</option>
+      <option value="1">monday</option>
+      <option value="2">tuesday</option>
+      <option value="3">wednesday</option>
+      <option value="4">thursday</option>
+      <option value="5">friday</option>
+      <option value="6">saturday</option>
+    </select>
+    <input type="date" name="startDate" id="start-date" />
+    <input type="date" name="endDate" id="end-date" />
+
+    <input type="button" value="Show" id="show-btn" />
+
+    <script>
+      let day = document.getElementById("day");
+      let startDate = document.getElementById("start-date");
+      let endDate = document.getElementById("end-date");
+      let showBtn = document.getElementById("show-btn");
+      showBtn.addEventListener("click", () => {
+        let diff =
+          (new Date(endDate.value) - new Date(startDate.value)) /
+          (3600 * 24 * 1000);
+        let temp = new Date(startDate.value);
+        for (let i = 0; i <= diff; i++) {
+          if (day.value == temp.getDay()) {
+            console.log(temp.toLocaleDateString());
+          }
+          temp.setDate(temp.getDate() + 1);
+        }
+      });
+    </script>
+  </body>
+</html>

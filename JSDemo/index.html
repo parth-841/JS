@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Java Script</title>
+    <link rel="stylesheet" href="./CSS/bootstrap.css" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Address Section Start-->
+      <div class="row">
+        <form action="#" class="w-100">
+          <div class="form-group">
+            <label class="h2 text-secondary"
+              >Address: <span class="writing"></span>
+            </label>
+            <textarea
+              name="address"
+              rows="3"
+              class="address form-control rounded overflow-auto bg-light"
+            ></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="row hide-elem">
+        <div class="h2 text-secondary w-100">You Wrote:</div>
+        <div
+          class="output h3 bg-light w-100 text-break overflow-auto border"
+        ></div>
+      </div>
+      <div class="row">
+        <button class="hide-btn btn btn-secondary mx-auto px-5">
+          Hide/Show
+        </button>
+      </div>
+      <!-- Address Section End -->
+
+      <!-- Form Section Start -->
+      <div class="row mt-5">
+        <form
+          name="myForm"
+          class="w-100 border p-3 d-flex align-items-center flex-column"
+        >
+          <div class="form-group w-75">
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="form-control"
+              placeholder="name..."
+              required
+            />
+          </div>
+          <div class="form-group w-75">
+            <label for="email">Email ID:</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-control"
+              placeholder="abc@gmail.com"
+              required
+            />
+          </div>
+          <div class="form-group w-75">
+            Gender:
+            <div class="custom-control custom-radio">
+              <input
+                type="radio"
+                name="gender"
+                id="male"
+                value="male"
+                class="custom-control-input"
+                checked
+              />
+              <label for="male" class="custom-control-label">Male</label>
+            </div>
+            <div class="custom-control custom-radio">
+              <input
+                type="radio"
+                name="gender"
+                id="female"
+                value="female"
+                class="custom-control-input"
+              />
+              <label for="female" class="custom-control-label">Female</label>
+            </div>
+            <div class="custom-control custom-radio">
+              <input
+                type="radio"
+                name="gender"
+                id="other"
+                value="other"
+                class="custom-control-input"
+              />
+              <label for="other" class="custom-control-label">Other</label>
+            </div>
+          </div>
+          <div class="w-75 d-flex justify-content-between">
+            <input
+              type="submit"
+              value="Submit"
+              class="submit-btn btn btn-secondary"
+            />
+            <input type="reset" value="Reset" class="btn btn-secondary" />
+          </div>
+        </form>
+      </div>
+      <div class="row">
+        <div class="form-output border w-100 p-5 mt-5 lead"></div>
+        <button class="btn btn-secondary btn-clear mx-auto px-5 my-5">
+          Clear
+        </button>
+      </div>
+      <!-- Form Section End -->
+
+      <!-- UL Section Start -->
+      <div class="row">
+        <ul class="ul">
+          <li>Item1</li>
+          <li>Item2</li>
+          <li>Item3</li>
+          <li>Item4</li>
+        </ul>
+      </div>
+      <!-- UL Section End -->
+
+      <!-- Create Element Section Start-->
+      <div class="row d-flex flex-column">
+        <div class="form-group w-75">
+          <label><strong>Insert Values(Comma Separated):</strong></label>
+          <input
+            type="text"
+            name="items"
+            id="items"
+            class="form-control input-values"
+          />
+        </div>
+        <div class="output-values">Output:</div>
+      </div>
+      <!-- Create Element Section End -->
+
+      <!-- Bubbling Section Start -->
+      <div class="row">
+        Bubbling & Stop Bubbling:
+        <div class="outer-div border p-5">
+          outer-div
+          <div class="inner-div border p-5">
+            inner-div
+            <p class="p border p-5">p</p>
+          </div>
+        </div>
+      </div>
+      <!-- Bubbling Section End -->
+    </div>
+
+    <!-- <script src="./JS/1variable.js"></script> -->
+    <!-- <script src="./JS/2TypeConversion.js"></script> -->
+    <!-- <script src="./JS/3Operators.js"></script> -->
+    <!-- if...else, while, do..while, for... -->
+    <!-- <script src="./JS/4Functions.js"></script> -->
+    <!-- <script src="./JS/5Object.js"></script> -->
+    <!-- <script src="./JS/6DataTypes.js"></script> -->
+    <!-- <script src="./JS/7Arrays.js"></script> -->
+    <!-- <script src="./JS/8Maps.js"></script> -->
+    <!-- <script src="./JS/9Sets.js"></script> -->
+    <!-- <script src="./JS/10Destructuring.js"></script> -->
+    <!-- <script src="./JS/11Date.js"></script> -->
+    <!-- <script src="./JS/12JSON.js"></script> -->
+    <!-- <script src="./JS/13TimeoutInterval.js"></script> -->
+    <!-- <script src="./JS/14CallApplyBind.js"></script> -->
+    <!-- <script src="./JS/15GetterSetter.js"></script> -->
+    <!-- <script src="./JS/16Class.js"></script> -->
+    <!-- <script src="./JS/17Errors.js"></script> -->
+    <!-- <script src="./JS/18Promise.js"></script> -->
+    <!-- <script src="./JS/19AsyncAwait.js"></script> -->
+    <!-- <script src="./JS/20DOM.js"></script> -->
+    <!-- <script src="./JS/21Bubbling.js"></script> -->
+    <script src="./JS/test.js"></script>
+  </body>
+</html>

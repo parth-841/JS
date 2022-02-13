@@ -1,0 +1,12 @@
+.address {
+  resize: none;
+  font-size: 30px;
+}
+
+.output {
+  height: 200px;
+}
+
+.form-output {
+  max-height: 300px;
+}
